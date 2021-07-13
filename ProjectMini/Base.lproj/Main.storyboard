@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="ProjectMini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CharmVit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgs-OD-d91">
+                                <rect key="frame" x="108" y="54" width="114" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Sta-2c-dbs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.90607041119999998" green="0.50607740879999996" blue="0.23640549180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdt-dZ-fpa">
+                                <rect key="frame" x="230" y="54" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="5fG-Co-13E"/>
+                                    <constraint firstAttribute="height" constant="24" id="blO-TY-tVm"/>
+                                </constraints>
+                                <state key="normal" image="Mask"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i85-5S-ssD">
+                                <rect key="frame" x="14" y="91" width="386" height="645"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bdt-dZ-fpa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="2d8-Hc-VTe"/>
+                            <constraint firstItem="lgs-OD-d91" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="Hki-aM-C6N"/>
+                            <constraint firstItem="lgs-OD-d91" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="TXS-2A-O6t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i85-5S-ssD" secondAttribute="bottom" id="bJU-gj-BME"/>
+                            <constraint firstItem="i85-5S-ssD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="c73-YQ-6bc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i85-5S-ssD" secondAttribute="trailing" constant="14" id="gO3-Rk-2p0"/>
+                            <constraint firstItem="i85-5S-ssD" firstAttribute="top" secondItem="lgs-OD-d91" secondAttribute="bottom" constant="13" id="lcV-oB-uyF"/>
+                            <constraint firstItem="bdt-dZ-fpa" firstAttribute="leading" secondItem="lgs-OD-d91" secondAttribute="trailing" constant="8" id="tKS-ya-HeL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="i85-5S-ssD" id="mKs-Qb-otu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mask" width="17.333333969116211" height="19.333333969116211"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

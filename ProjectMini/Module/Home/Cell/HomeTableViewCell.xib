@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="187" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="ProjectMini" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="258"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="258"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phòng hội nhập" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELI-QO-AYX">
+                        <rect key="frame" x="1" y="0.0" width="156" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Cl0-6h-WNN"/>
+                            <constraint firstAttribute="width" constant="156" id="hCK-lC-KYR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max: 18 người" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbD-Qf-kEy">
+                        <rect key="frame" x="283" y="5" width="90" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="MiA-UO-sRj"/>
+                            <constraint firstAttribute="width" constant="90" id="Swc-mJ-33g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle1" translatesAutoresizingMaskIntoConstraints="NO" id="V3b-AB-bwq">
+                        <rect key="frame" x="0.0" y="28" width="377" height="191.33333333333334"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="V3b-AB-bwq" secondAttribute="height" multiplier="347:176" id="QVp-Fm-RqP"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="t2z-Kn-Jmn">
+                        <rect key="frame" x="0.0" y="222.33333333333334" width="377" height="27"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNn-yi-Yog" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="30.333333333333332" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFf-iP-dsP">
+                                        <rect key="frame" x="10.333333333333334" y="3.3333333333333144" width="10.000000000000002" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="l2X-uT-vn7"/>
+                                            <constraint firstAttribute="height" constant="20" id="wX3-nz-3un"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="FqB-Fl-fgJ"/>
+                                    <constraint firstItem="pFf-iP-dsP" firstAttribute="centerY" secondItem="yNn-yi-Yog" secondAttribute="centerY" id="LWL-bg-3rc"/>
+                                    <constraint firstItem="pFf-iP-dsP" firstAttribute="centerX" secondItem="yNn-yi-Yog" secondAttribute="centerX" id="ld6-Ne-aKI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyI-Ns-ym7" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="43.333333333333336" y="0.0" width="30.333333333333336" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJa-Wk-5x5">
+                                        <rect key="frame" x="8" y="3.3333333333333144" width="10" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="0eD-DN-elv"/>
+                                            <constraint firstAttribute="height" constant="20" id="Qq7-hP-wJS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Ssp-Ce-9Fx"/>
+                                    <constraint firstItem="hJa-Wk-5x5" firstAttribute="centerY" secondItem="wyI-Ns-ym7" secondAttribute="centerY" id="gmN-J6-eWp"/>
+                                    <constraint firstItem="hJa-Wk-5x5" firstAttribute="leading" secondItem="wyI-Ns-ym7" secondAttribute="leadingMargin" id="gu6-Q8-ixh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-yh-mMp" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="86.666666666666671" y="0.0" width="30.333333333333329" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHs-ss-LSD">
+                                        <rect key="frame" x="7.3333333333333286" y="3.3333333333333144" width="16" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="N81-ij-30B"/>
+                                            <constraint firstAttribute="height" constant="20" id="b8Z-6G-IDM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mHs-ss-LSD" firstAttribute="centerX" secondItem="cZ3-yh-mMp" secondAttribute="centerX" id="Bh5-b7-Ptr"/>
+                                    <constraint firstAttribute="height" constant="27" id="mfP-3b-G5S"/>
+                                    <constraint firstItem="mHs-ss-LSD" firstAttribute="centerY" secondItem="cZ3-yh-mMp" secondAttribute="centerY" id="rEd-g7-RPc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZX-IH-Sy7" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="130" y="0.0" width="30.333333333333343" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsY-5W-KTf">
+                                        <rect key="frame" x="7.3333333333333428" y="3.3333333333333144" width="16" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="QGG-Up-IR3"/>
+                                            <constraint firstAttribute="height" constant="20" id="bQM-AW-NZd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="SeN-68-cIT"/>
+                                    <constraint firstItem="PsY-5W-KTf" firstAttribute="centerX" secondItem="dZX-IH-Sy7" secondAttribute="centerX" id="g9O-Bz-nx2"/>
+                                    <constraint firstItem="PsY-5W-KTf" firstAttribute="centerY" secondItem="dZX-IH-Sy7" secondAttribute="centerY" id="p7P-Vh-DLl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3F-Jm-t4J" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="173.33333333333334" y="0.0" width="30.333333333333343" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-cE-ruD">
+                                        <rect key="frame" x="8" y="3.3333333333333144" width="10" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="UXa-tb-ELS"/>
+                                            <constraint firstAttribute="width" constant="10" id="xyp-sT-OEw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ny4-cE-ruD" firstAttribute="centerY" secondItem="j3F-Jm-t4J" secondAttribute="centerY" id="5et-f1-fMN"/>
+                                    <constraint firstItem="ny4-cE-ruD" firstAttribute="leading" secondItem="j3F-Jm-t4J" secondAttribute="leadingMargin" id="7LF-UA-aUJ"/>
+                                    <constraint firstAttribute="height" constant="27" id="UxD-Qn-5Em"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzF-Uw-fWQ" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="216.66666666666666" y="0.0" width="30.333333333333343" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZg-ge-bLf">
+                                        <rect key="frame" x="8" y="3.3333333333333144" width="10" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="8hl-c6-4Jt"/>
+                                            <constraint firstAttribute="width" constant="10" id="nAc-6U-gjU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="FZg-ge-bLf" firstAttribute="centerY" secondItem="bzF-Uw-fWQ" secondAttribute="centerY" id="B7j-2S-1LN"/>
+                                    <constraint firstItem="FZg-ge-bLf" firstAttribute="leading" secondItem="bzF-Uw-fWQ" secondAttribute="leadingMargin" id="Csa-v7-zs0"/>
+                                    <constraint firstAttribute="height" constant="27" id="lzE-Ag-ixz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtM-Jr-fNe" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="260" y="0.0" width="30.333333333333314" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oI3-9p-Iod">
+                                        <rect key="frame" x="8" y="3.3333333333333144" width="10" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Ez0-R6-qtH"/>
+                                            <constraint firstAttribute="width" constant="10" id="FKy-Us-Vwb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="oI3-9p-Iod" firstAttribute="leading" secondItem="vtM-Jr-fNe" secondAttribute="leadingMargin" id="ba8-Gf-xcT"/>
+                                    <constraint firstItem="oI3-9p-Iod" firstAttribute="centerY" secondItem="vtM-Jr-fNe" secondAttribute="centerY" id="l2N-zQ-DHW"/>
+                                    <constraint firstAttribute="height" constant="27" id="sf0-qv-xcV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-wY-CAo" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="303.33333333333331" y="0.0" width="30.333333333333314" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-q0-K4U">
+                                        <rect key="frame" x="8" y="3.3333333333333144" width="10" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="6SR-fP-gkp"/>
+                                            <constraint firstAttribute="height" constant="20" id="J5J-Zm-Kpq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="s8g-q0-K4U" firstAttribute="centerY" secondItem="Lj0-wY-CAo" secondAttribute="centerY" id="18F-xY-ay3"/>
+                                    <constraint firstItem="s8g-q0-K4U" firstAttribute="leading" secondItem="Lj0-wY-CAo" secondAttribute="leadingMargin" id="OFB-cL-vLA"/>
+                                    <constraint firstAttribute="height" constant="27" id="znB-vJ-vL2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f5-Fo-naV" customClass="ProgressBarUIView" customModule="ProjectMini" customModuleProvider="target">
+                                <rect key="frame" x="346.66666666666669" y="0.0" width="30.333333333333314" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVd-bI-9yC">
+                                        <rect key="frame" x="11" y="5" width="8.6666666666666643" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vVd-bI-9yC" firstAttribute="centerY" secondItem="1f5-Fo-naV" secondAttribute="centerY" id="Nzl-cg-SGo"/>
+                                    <constraint firstItem="vVd-bI-9yC" firstAttribute="centerX" secondItem="1f5-Fo-naV" secondAttribute="centerX" id="dUd-FR-6ah"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="893-VC-Fn7"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t2z-Kn-Jmn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1wV-tU-Bo2"/>
+                    <constraint firstAttribute="trailing" secondItem="t2z-Kn-Jmn" secondAttribute="trailing" id="2GH-ad-eNz"/>
+                    <constraint firstAttribute="bottom" secondItem="t2z-Kn-Jmn" secondAttribute="bottom" priority="999" id="69h-sQ-OMb"/>
+                    <constraint firstItem="ELI-QO-AYX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9sM-AM-QVU"/>
+                    <constraint firstAttribute="trailing" secondItem="V3b-AB-bwq" secondAttribute="trailing" id="CAK-D7-jyW"/>
+                    <constraint firstItem="RbD-Qf-kEy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="DOI-mx-slo"/>
+                    <constraint firstItem="ELI-QO-AYX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="EEp-yv-0wU"/>
+                    <constraint firstAttribute="trailing" secondItem="RbD-Qf-kEy" secondAttribute="trailing" constant="4" id="GjK-cc-2io"/>
+                    <constraint firstItem="V3b-AB-bwq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="N3B-ux-IDW"/>
+                    <constraint firstItem="t2z-Kn-Jmn" firstAttribute="top" secondItem="V3b-AB-bwq" secondAttribute="bottom" constant="3" id="Ogj-a3-5ra"/>
+                    <constraint firstItem="V3b-AB-bwq" firstAttribute="top" secondItem="RbD-Qf-kEy" secondAttribute="bottom" constant="6" id="koA-RK-n3e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgRoom" destination="V3b-AB-bwq" id="gF0-17-GyW"/>
+                <outlet property="lblRoom" destination="ELI-QO-AYX" id="uiG-Gg-rob"/>
+                <outlet property="lblpeople" destination="RbD-Qf-kEy" id="tat-kj-cTj"/>
+                <outlet property="stackviewRoom" destination="t2z-Kn-Jmn" id="6Cb-ml-qFk"/>
+                <outlet property="viewProgress" destination="yNn-yi-Yog" id="WRA-xP-WLs"/>
+                <outlet property="viewProgress2" destination="wyI-Ns-ym7" id="3r3-kw-pX4"/>
+            </connections>
+            <point key="canvasLocation" x="160.19021739130437" y="42.028985507246382"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle1" width="347" height="176"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeetingScheduleViewController" customModule="ProjectMini" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAll" destination="f6S-hY-3Bd" id="K2N-8W-ULF"/>
+                <outlet property="btnBook" destination="q65-pO-5Ny" id="ynV-X5-9Sd"/>
+                <outlet property="btnInvalid" destination="YqV-dy-qv7" id="YVv-2U-F0S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lịch họp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8l-kd-mYA">
+                    <rect key="frame" x="131" y="52" width="113" height="31.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <color key="textColor" red="0.90607041119999998" green="0.50607740879999996" blue="0.23640549180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="6ZL-KB-Pa4">
+                    <rect key="frame" x="39" y="99.5" width="297" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6S-hY-3Bd">
+                            <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Tất cả">
+                                <color key="titleColor" red="0.90607041119999998" green="0.50607740879999996" blue="0.23640549180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btn_Button:" destination="-1" eventType="touchUpInside" id="OBf-gt-woL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q65-pO-5Ny">
+                            <rect key="frame" x="106" y="0.0" width="85" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="Tôi đặt">
+                                <color key="titleColor" red="0.90607041119999998" green="0.50607740879999996" blue="0.23640549180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btn_Book:" destination="-1" eventType="touchUpInside" id="FkZ-20-dEh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqV-dy-qv7">
+                            <rect key="frame" x="212" y="0.0" width="85" height="30"/>
+                            <state key="normal" title="Được mời">
+                                <color key="titleColor" red="0.90607041119999998" green="0.50607740879999996" blue="0.23640549180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btn_Invalid:" destination="-1" eventType="touchUpInside" id="5jg-Ep-YkP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="S8l-kd-mYA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="131" id="71n-1i-xFy"/>
+                <constraint firstItem="S8l-kd-mYA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="52" id="T80-FU-03C"/>
+                <constraint firstItem="6ZL-KB-Pa4" firstAttribute="top" secondItem="S8l-kd-mYA" secondAttribute="bottom" constant="16" id="Z62-Eg-ktv"/>
+                <constraint firstItem="6ZL-KB-Pa4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="39" id="khU-af-wo4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6ZL-KB-Pa4" secondAttribute="trailing" constant="39" id="mEn-Sb-hOR"/>
+                <constraint firstItem="S8l-kd-mYA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="tn9-nu-naf"/>
+            </constraints>
+            <point key="canvasLocation" x="-355" y="59"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupErrorBookRoomViewController" customModule="ProjectMini" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="252"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qm-bc-bqI">
+                    <rect key="frame" x="311" y="12" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="NDf-tZ-di5"/>
+                        <constraint firstAttribute="width" constant="20" id="Uf0-Xb-W99"/>
+                    </constraints>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fail" translatesAutoresizingMaskIntoConstraints="NO" id="eBG-8P-r0E">
+                    <rect key="frame" x="132" y="32" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="kjo-GL-Vbh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khoảng thời gian bạn chọn đã có người khác đặt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v0-z3-bdC">
+                    <rect key="frame" x="22" y="140" width="299" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="2jL-iS-sX4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eu-yc-tm9">
+                    <rect key="frame" x="21" y="199" width="303" height="32"/>
+                    <color key="backgroundColor" red="0.90607041119999998" green="0.50607740879999996" blue="0.23640549180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Quay lại">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5v0-z3-bdC" secondAttribute="trailing" constant="23" id="0hP-6b-SVK"/>
+                <constraint firstItem="5v0-z3-bdC" firstAttribute="top" secondItem="eBG-8P-r0E" secondAttribute="bottom" constant="28" id="33v-kI-k8R"/>
+                <constraint firstItem="eBG-8P-r0E" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="95Z-Vc-0IY"/>
+                <constraint firstItem="eBG-8P-r0E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="Pjx-DF-Klg"/>
+                <constraint firstItem="3eu-yc-tm9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="Q9m-Wg-VDw"/>
+                <constraint firstItem="3qm-bc-bqI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="QQE-Qb-MkY"/>
+                <constraint firstItem="3eu-yc-tm9" firstAttribute="top" secondItem="5v0-z3-bdC" secondAttribute="bottom" constant="11" id="b4S-UU-6XW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3eu-yc-tm9" secondAttribute="trailing" constant="20" id="ct7-pR-dnH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3eu-yc-tm9" secondAttribute="bottom" constant="21" id="eyz-84-bAZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3qm-bc-bqI" secondAttribute="trailing" constant="13" id="ggI-bp-K9V"/>
+                <constraint firstItem="5v0-z3-bdC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="oxS-fu-hTK"/>
+                <constraint firstItem="eBG-8P-r0E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="132" id="uyz-xo-1gq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eBG-8P-r0E" secondAttribute="trailing" constant="132" id="vdK-Pz-cO9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="78" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fail" width="40.5" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
